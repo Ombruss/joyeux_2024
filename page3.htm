@@ -1,0 +1,514 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="google" content="notranslate">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta property="og:image" content="img/ogr.jpg"> 
+    <meta property="og:title" content="Il faut voir ça au moins une fois dans sa vie. Site fantastique 🙄"> 
+    <meta property="og:description" content="Cliquez ici">
+    <meta property="og:site_name" content="fais ton vœu">
+<title>Joyeux noël!</title>
+
+
+
+    <link rel="stylesheet" href="page3_fichiers/animate.min.css">
+    <script src="page3_fichiers/Sans%2520titre_003" async="" type="text/javascript"></script><script type="text/javascript" async="" src="page3_fichiers/analytics.js"></script><script src="page3_fichiers/jquery.min.js"></script>
+
+<audio id="audiocracker" src="page1_fichiers/Jingle-Bells.mp3" autostart="false"></audio>
+<script>
+    function PlaySound() {
+          var sound = document.getElementById("audiocracker");
+          sound.play()
+      }
+    </script>
+ 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+ 
+ body{
+        background: rgb(232, 188, 84) ;
+          margin:0;
+      }
+.main{
+        background:#fff;
+        max-width: 450px;
+        min-height: 200px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 15px;
+        color: #999;
+        padding-bottom: 2px;
+        background-size: 100%;
+
+      }
+.wishMessage {
+        color: #fff;
+        font-size: 26px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-shadow: 0px 0px 10px #afafaf;
+      }.WishMessage p{
+        margin: 0.3em 0;
+      }
+      
+.m1{position:fixed;left:0.2%; width:auto;height:100%;top:1%;color:#000;}
+.m2{position:fixed;right:0.2%; width:auto;height:100%;top:1%;color:#000;}
+.glow {
+         width:50%;
+         padding: 2px;
+         background-color:#F215A2;
+         animation: glow 2s infinite;
+         font-size:25px;
+         font-family: 'Ranga', cursive;
+         color:white;
+         margin:auto;
+         text-align:center;
+         border-radius:10px;
+         text-shadow:1px 2px 6px black;
+         }
+         @keyframes glow {
+         0%   {box-shadow: 0px 0px 0px #FF1493	;}
+         100%   {box-shadow: 0px 0px 20px 5px #ffb3db;}
+         }
+#username {
+     color: black;  /* Fallback: assume this color ON TOP of image */
+   background: url(img/name.gif);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+          animation: swing 4s infinite;
+            text-transform: uppercase;
+          margin-bottom: 5px;
+          font-size: 40px;
+          padding: 0 10px;
+          font-family: 'Boogaloo', cursive;
+} 
+#usernameb { color: black;  /* Fallback: assume this color ON TOP of image */
+   background: url(img/name.gif);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+          animation: swing 4s infinite;
+            text-transform: uppercase;
+          margin-bottom: 5px;
+          font-size: 25px;
+          padding: 0 10px;
+          font-family: 'Boogaloo', cursive;
+}
+a{text-decoration:none;color:inherit}
+
+#demo {
+        font-size: 20px; color:green; -webkit-text-stroke-width: 87%;
+   -webkit-text-stroke-color: pink;
+         }
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.share-button {
+    display: block;
+    line-height: 15px;
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    height:55px;
+    border-radius: 25px;
+    border:none;
+    box-sizing: border-box;
+    padding: 5px;
+    background:#34af23;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight:bold;
+    text-align: center;
+    text-decoration: none;
+    width:95%;
+    margin-left:10px;
+    margin-right:30px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .3);
+    animation: sonisahab infinite linear 1s;
+    -webkit-transform: translate3d(30%,0,0);
+    transform: translate3d(30%,0,0);
+    position: fixed;
+           }
+
+.share-button :active {
+            box-shadow: none
+        }
+    
+     @keyframes sonisahab {from {
+                -webkit-transform: rotateZ(0)}25% {
+                -webkit-transform: rotateZ(1.5deg)}
+                50% {-webkit-transform: rotateZ(0deg) }
+                75% {-webkit-transform: rotateZ(-1.5deg) }
+                to {-webkit-transform: rotateZ(0) }}    
+     
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      width: 100%; 
+      max-width: 500px;  
+      margin: auto;  
+    }
+
+     
+    .options {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+      margin-top: 20px;
+    }
+
+    .options button {
+      width: 100%;  
+      margin: auto;
+      border: none;
+      border-radius: 5px;
+      padding: 5px; 
+      cursor: pointer;
+      display: flex;  
+      align-items: center; 
+      line-height: 1; 
+      font-size: 21px;
+      font-weight: bold;
+      color: white;
+      text-align:center;
+      justify-content: center;
+    }
+
+  
+    .aadi-whatsapp {
+      background-color: #25D366;  
+    }
+
+    .aadi-facebook {
+      background-color: #0695FF;  
+    }
+
+    .aadi-messenger {
+      background-color: #0695FF;  
+    }
+
+     
+    .close {
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      min-width: 70px;
+      margin-bottom: 10px;
+    }
+
+ 
+    @media (max-width: 768px) {
+      .modal-content {
+        width: 90%;
+      }
+
+      .options button {
+        width: 90%;  
+      }
+
+      
+      .close {
+        display: block;
+        text-align: center;
+      }
+    }
+    
+    @keyframes axdi-shake {
+	0%,100% {transform: rotate(0deg);transform-origin: 50% 100%;}
+	10% {	transform: rotate(2deg);}
+    20%,40%,60% {transform: rotate(-4deg);}
+    30%,50%,70% {transform: rotate(4deg);}
+    80% {transform: rotate(-2deg);	}
+    90% {transform: rotate(2deg);}}
+</style>
+<script type="text/javascript" async="" src="page3_fichiers/js15_as.js"></script><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="page3_fichiers/f_002.txt" async=""></script><script async="" src="page3_fichiers/22847466737"></script><script async="" defer="defer" src="page3_fichiers/Sans%2520titre_002" id="dtspv_114s"></script><script src="page3_fichiers/dataBeacons.min.js"></script><script async="" src="page3_fichiers/AGSKWxXphP__TyF5-aVXxkm5FwtfurXtkbbNXj0IXZ3gnvcJEInh8J4anWL-gI9A"></script><script async="" src="page3_fichiers/AGSKWxWWxd74G3aS9yG4yr8H5oS8kVqosPYktxD8N2WV967M92_D5HCwaAMOLuo3"></script><script async="" src="page3_fichiers/AGSKWxW-7Bp2jkfBXPsPv2MSRrlI63y7XqdzcFMlaUE_rIXRfw75pvPf1Icz9iy-"></script></head>
+<body style="background:rgb(210, 136, 52); background-size:auto;">
+
+  <marquee class="m1" behavior="scroll" direction="up" scrolldelay="0"><br>
+    <p style="text-shadow: 2px 2px 10px black, 2px 2px 10px black, 2px 2px 10px red, 2px 2px 10px black;color:rgb(193, 193, 179)" ><b>
+      FLORENT</b><br/>
+    <img src="page3_fichiers/images%20(2).jpeg" height="100px" width="200px"><br><br>
+  <img src="page3_fichiers/mt1.png" height="50px" width="50px"><br><br>
+  <img src="page3_fichiers/mt2.png" height="50px" width="50px"><br><br>
+  <img src="page3_fichiers/mt3.png" height="50px" width="50px"><br><br>
+  <img src="page3_fichiers/mt4.png" height="50px" width="50px"><br><br>
+  <img src="page3_fichiers/mt5.png" height="50px" width="50px"><br><br>
+  <p style="text-shadow: 2px 2px 10px black, 2px 2px 10px black, 2px 2px 10px red, 2px 2px 10px black;color:rgb(202, 14, 148)" ><b>
+    FLORENT</b><br/>
+  <img src="page3_fichiers/mt6.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt7.png" height="50px" width="50px"><br><br>
+  <img src="page3_fichiers/mt8.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt9.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt10.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/téléchargement.jpeg" height="100px" width="200px"><br><br>
+  <img src="page3_fichiers/mt1.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt2.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt3.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt4.png"height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt5.png" height="50px" width="50px"><br><br>
+  <p style="text-shadow: 2px 2px 10px black, 2px 2px 10px black, 2px 2px 10px red, 2px 2px 10px black;color:rgb(14, 224, 18)" ><b>
+    FLORENT</b><br/>
+  <img src="page3_fichiers/mt6.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt7.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt8.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt9.png"height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt10.png"height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/téléchargement.an.jpg" height="100px" width="200px"><br><br>
+  <p style="text-shadow: 2px 2px 10px black, 2px 2px 10px black, 2px 2px 10px red, 2px 2px 10px black;color:rgb(181, 19, 19)" ><b>
+    FLORENT</b><br/>
+  </marquee>
+  <marquee class="m2" behavior="scroll" direction="down" scrolldelay="0"><br>
+    <p style="text-shadow: 2px 2px 10px black, 2px 2px 10px black, 2px 2px 10px red, 2px 2px 10px black;color:rgb(27, 44, 226)" ><b>
+      FLORENT</b><br/>
+    <img src="page3_fichiers/bonannfr-5.gif.webp" height="100px" width="200px"><br><br>
+  <img src="page3_fichiers/mt2.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt3.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt4.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt5.png" height="50px"  width="50px"><br><br>
+  <p style="text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px red, -1px -1px 3px black;color:rgb(211, 86, 8)"><b>
+    FLORENT</b><br/>
+  <img src="page3_fichiers/mt6.png"height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt7.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt8.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt9.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/bonannfr-3.gif" height="100px" width="200px"><br><br>
+  <img src="page3_fichiers/mt10.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt1.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt2.png"height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt3.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt4.png"height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt5.png" height="50px"  width="50px"><br><br>
+  <p style="text-shadow: 2px 2px 10px black, 2px 2px 10px black, 2px 2px 10px red, 2px 2px 10px black;color:yellow" ><b>
+    FLORENT</b><br/>
+  <img src="page3_fichiers/mt6.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt7.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt8.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt9.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/mt10.png" height="50px"  width="50px"><br><br>
+  <img src="page3_fichiers/bonannfr-8.gif.webp" height="100px" width="200px"><br><br>
+  <p style="text-shadow: 2px 2px 10px black, 2px 2px 10px black, 2px 2px 10px red, 2px 2px 10px black;color:rgb(44, 217, 229)" ><b>
+    FLORENT</b><br/>
+  
+  </marquee>
+  <img src="page3_fichiers/mt9.png" height="50px" width="50px"><br><br>
+<div class="main">
+<center>
+<script async="" src="page3_fichiers/f.txt"></script>
+<div id="gpt-passback" data-google-query-id="CJ_pmLz7hoMDFQ5KpAQdmuwBIw">
+  
+<div id="google_ads_iframe_/22847466737/ca-pub-9712269079996523-tag/bottom-small_0__container__" style="border: 0pt;"><iframe id="google_ads_iframe_/22847466737/ca-pub-9712269079996523-tag/bottom-small_0" name="google_ads_iframe_/22847466737/ca-pub-9712269079996523-tag/bottom-small_0" title="3rd party ad content" width="320" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" role="region" aria-label="Advertisement" tabindex="0" data-google-container-id="1" data-load-complete="true"></iframe></div></div>  
+<br>
+</center>
+<div style="animation: swing 4s infinite;">
+      <h1 style="background: url(img/name.gif);-webkit-text-fill-color: red; background-clip: text;" id="username"></h1>
+   </div>
+   
+<img src="page3_fichiers/fr-wish.png" width="50%" height="auto" style="animation: pulse 1.0s infinite">
+   
+<div style="font-size: 30px; font-weight: 850; color: green;">
+       <p id="demo">13<font color="Amaranth"> jours,</font> 15<font color="Citrine"> heures,</font> 30<font color="Amaranth"> minutes,<br></font> 57<font color="Citrine">  secondes avant de</font> </p></div>
+       
+<img src="page3_fichiers/french-mc.png" width="87%" height="auto" style="animation: pulse 1.0s infinite"><br><br>
+
+<img style="width:45%;height:30%;" src="page3_fichiers/under3.gif">
+<img style="width:45%;height:30%;" src="page3_fichiers/under4.gif">
+<center>
+<div class="wishMessage" style="text-shadow: 1px 1px 3px yellow, 1px 1px 3px orange, -1px -1px 3px silver, -1px -1px 3px black;">
+<p style="text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:cyan">
+Je vous souhaite à vous et  <br> toute votre famille une <br/> bonne fête🔥
+</p>
+<p style="text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:#ff9933">
+Que cette journnée soit inoubliable
+</p>
+<p style="text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:white">
+Pour vous, remplie de jioe🎄
+</p>
+<p style="text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:yellow">
+De bonheur.👼🏼
+</p><br/>
+<p style="text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:pink">
+ Merci d'avoir visité cette page.🎄
+</p>
+<p style="text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:yellow"><b>
+Joyeux Noël 💞
+</b></p>
+</div>
+<br>
+<center>
+<script async="" src="page3_fichiers/f.txt"></script>
+<div id="gpt-passback">
+  <script>
+    window.googletag = window.googletag || {cmd: []};
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/22847466737/ca-pub-9712269079996523-tag/250wishing', [300, 250], 'gpt-passback').addService(googletag.pubads());
+    googletag.enableServices();
+    googletag.display('gpt-passback');
+    });
+  </script>
+  <audio autoplay="autoplay">
+    <source src="C:\Users\FLORENT\Desktop\git_heb\page3_fichiers\english2.mp3"></audio>
+</div>  
+</center>
+
+<br>
+   <h1 id="usernameb"></h1><br>
+</center></div>
+<br><br><br>
+
+
+
+
+
+
+<!-- Share Button -->
+  <button class="share-button" onclick="openModal()">👉 Cliquez Ici Pour Partager 👈</button>
+
+  <!-- Modal Popup -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal()">Close</button>
+      <div class="options mobile-options"> 
+        <a href="whatsapp://send?text=*flo* vous a envoy%C3%A9 un message surprise   %0A *Ouvrez ce lien* %F0%9F%91%87%F0%9F%91%87 %0A secret-msg.com/fr/?n=flo%26t=w %0A">
+          <button class="aadi-whatsapp">
+            <img src="page3_fichiers/wtsp.png" style="animation:tada 3s infinite;" alt="WhatsApp" width="50" height="50">&nbsp; 
+            Partager sur WhatsApp
+          </button>
+        </a>
+        <br>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsecret-msg.com/fr/?n=flo%26t=fa"><button class="aadi-facebook">
+            <img src="page3_fichiers/fb.png" style="animation:tada 3s infinite;" alt="Facebook" width="50" height="50">&nbsp;
+                Partager sur Facebook
+          </button></a>   
+      </div>
+    </div>
+  </div>
+
+ <audio id="audiocracker" src="page1_fichiers/Jingle-Bells.mp3" autostart="false"></audio>
+<script>
+    function PlaySound() {
+          var sound = document.getElementById("audiocracker");
+          sound.play()
+      }
+    </script>
+ 
+<script> 
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
+
+// Update the count down every 02 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "<font color='Amaranth'> jours,</font> " + hours + "<font color='Citrine'> heures,</font> "
+  + minutes + "<font color='Amaranth'> minutes,<br></font> " + seconds + "<font color='Citrine'>  secondes avant de</font> ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "";
+  }
+}, 1000);
+</script>
+  </script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<script> 
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
+
+// Update the count down every 02 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "<font color='Amaranth'> jours,</font> " + hours + "<font color='Citrine'> heures,</font> "
+  + minutes + "<font color='Amaranth'> minutes,<br></font> " + seconds + "<font color='Citrine'>  secondes avant de</font> ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "";
+  }
+}, 1000);
+</script>
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4822568,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="page3_fichiers/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174471664-1');
+</script>
+
+    </script>
+
+<script async="" type="text/javascript" src="page3_fichiers/0.htm"></script><iframe style="display: none; width: 0px; height: 0px; border: medium; z-index: -1000; left: -1000px; top: -1000px;" name="googlefcPresent"></iframe><img src="page3_fichiers/Sans%20titre.gif" width="0" height="0" style="display: none;"><script async="" src="page3_fichiers/Sans%20titre"></script><script src="page3_fichiers/tag.min.js" async="" defer="defer"></script><iframe src="page3_fichiers/container.htm" style="visibility: hidden; display: none;"></iframe><iframe name="__tcfapiLocator" src="page3_fichiers/a_004.htm" style="display: none; width: 0px; height: 0px; border: medium; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcInactive" src="page3_fichiers/a_004.htm" style="display: none; width: 0px; height: 0px; border: medium; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcLoaded" src="page3_fichiers/a_004.htm" style="display: none; width: 0px; height: 0px; border: medium; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe src="page3_fichiers/aframe.htm" width="0" height="0" style="display: none;"></iframe><img src="page3_fichiers/merge"><img src="page3_fichiers/generic.gif"><iframe style="width: 1px; height: 1px; position: absolute; left: -99px; top: -99px;" src="page3_fichiers/Portal.htm" title="sovrn-sync-beacon-portal"></iframe></body></html>
